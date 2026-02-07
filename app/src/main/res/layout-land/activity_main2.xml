@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/puzzle_cleanup"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="top">
+
+        <LinearLayout
+            android:id="@+id/menu_bar"
+            android:layout_width="260dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#A6C905"
+                android:text="Continue"
+                android:id="@+id/game_continue"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#A6C905"
+                android:text="NEW GAME"
+                android:id="@+id/new_game"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#A6C905"
+                android:text="Setting"
+                android:id="@+id/game_setting"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#A6C905"
+                android:text="About"
+                android:id="@+id/game_about"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#A6C905"
+                android:text="EXIT"
+                android:id="@+id/game_exit"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

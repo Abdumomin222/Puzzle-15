@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/puzzle_cleanup"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0.05">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Step"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/step"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </FrameLayout>
+            
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Time"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <Chronometer
+                    android:id="@+id/chronometr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="top">
+
+        <RelativeLayout
+            android:id="@+id/game_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="1"
+                android:id="@+id/btn1"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="2"
+                android:id="@+id/btn2"
+                android:layout_toRightOf="@+id/btn1"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="3"
+                android:id="@+id/btn3"
+                android:layout_toRightOf="@+id/btn2"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="4"
+                android:id="@+id/btn4"
+                android:layout_toRightOf="@+id/btn3"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="5"
+                android:id="@+id/btn5"
+                android:layout_below="@+id/btn1"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="6"
+                android:id="@+id/btn6"
+                android:layout_below="@+id/btn2"
+                android:layout_toRightOf="@+id/btn5"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="7"
+                android:id="@+id/btn7"
+                android:layout_below="@+id/btn3"
+                android:layout_toRightOf="@id/btn6"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="8"
+                android:id="@+id/btn8"
+                android:layout_below="@+id/btn4"
+                android:layout_toRightOf="@id/btn7"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="9"
+                android:id="@+id/btn9"
+                android:layout_below="@+id/btn5"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="10"
+                android:id="@+id/btn10"
+                android:layout_below="@+id/btn6"
+                android:layout_toRightOf="@+id/btn9"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="11"
+                android:id="@+id/btn11"
+                android:layout_below="@+id/btn7"
+                android:layout_toRightOf="@id/btn10"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="12"
+                android:id="@+id/btn12"
+                android:layout_below="@+id/btn8"
+                android:layout_toRightOf="@id/btn11"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="13"
+                android:id="@+id/btn13"
+                android:layout_below="@+id/btn9"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="14"
+                android:id="@+id/btn14"
+                android:layout_below="@+id/btn10"
+                android:layout_toRightOf="@+id/btn13"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="15"
+                android:id="@+id/btn15"
+                android:layout_below="@+id/btn11"
+                android:layout_toRightOf="@id/btn14"
+                style="@style/shablon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn16"
+                android:layout_below="@+id/btn12"
+                android:layout_toRightOf="@id/btn15"
+                android:background="#EFC583"
+                style="@style/shablon" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="0.05">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="190dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/game_finish"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#A6C907"
+                    android:text="Back"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="190dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/game_restar"
+                    android:backgroundTint="#A7C906"
+                    android:text="Restart"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

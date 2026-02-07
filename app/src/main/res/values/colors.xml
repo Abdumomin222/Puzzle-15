@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="puzzle">#14A1B3</color>
+    <color name="game_button_background">#FFC107</color>
+    <color name="game_button_empty_background">#EFC583</color>
+</resources>
